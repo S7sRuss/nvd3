@@ -37,7 +37,7 @@ nv.models.bulletChart = function() {
                 availableHeight = height - margin.top - margin.bottom,
                 that = this;
 
-            chart.update = function() { chart(selection) };
+            chart.update = function() { container.call(chart); };
             chart.container = this;
 
             // Display No Data message if there's nothing to show.
